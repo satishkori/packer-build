@@ -32,8 +32,8 @@ _ALIASES:
   http_directory: '{{user `http_directory`}}'
   http_port_max: '{{user `http_port_max`}}'
   http_port_min: '{{user `http_port_min`}}'
+  iso_checksum: '{{user `iso_checksum`}}'
   iso_checksum_type: '{{user `iso_checksum_type`}}'
-  iso_checksum_url: '{{user `iso_checksum_url`}}'
   iso_target_extension: iso
   iso_target_path: '{{user `packer_cache_dir`}}/{{user `iso_file`}}'
   iso_urls:
@@ -235,10 +235,10 @@ variables:
   http_directory: '.'
   http_port_max: '9000'
   http_port_min: '8000'
+  iso_checksum: 485d012d7769a1ce8883f5fb8ae4bcb91cee5a074b552bc885fa5cf1754b23ae
   iso_checksum_type: sha256
-  iso_checksum_url: http://cdimage.ubuntu.com/ubuntu-server/daily/current/SHA256SUMS
-  iso_file: zesty-server-amd64.iso
-  iso_path_external: http://cdimage.ubuntu.com/ubuntu-server/daily/current
+  iso_file: mini.iso
+  iso_path_external: http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/netboot
   iso_path_internal: http://localhost/ubuntu
   language: en
   locale: en_CA.UTF-8
